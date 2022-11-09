@@ -12,7 +12,10 @@ export class CadastroTitulosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   voltar() {
     this.router.navigate(['titulos']);
   }
+
+  cadastrar() { }
 }

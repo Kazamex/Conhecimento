@@ -1,8 +1,22 @@
 {
-  "titulos": [
+  "materias": [
     {
-      "id": 1,
-      "nome": "Git"
+      "id_materia": 1,
+      "nome_materia": "Git",
+      "ids_conteudo": []
     }
-  ]
+  ],
+  "conteudos": {
+    "id_conteudo": "",
+    "id_materia": 1,
+    "nome_conteudo": "",
+    "ids_informacao": []
+  },
+  "informacoes": {
+    "id_informacao": 1,
+    "id_conteudo": 1,
+    "tipo_informacao": "",
+    "texto_informacao": "",
+    "link_informacao": ""
+  }
 }

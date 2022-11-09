@@ -1,5 +1,21 @@
-<a routerLink="/titulos">titulos</a>
-<p>cadastro-titulos works!</p>
+
+<h2>Cadastro de Titulos de Conhecimento</h2>
+<table border="solid 1" class="tabela-titulos-cadastrados">
+  <tr>
+    <td class="celula-titulo-id">ID</td>
+    <td>Nome</td>
+    <td class="celula-excluir">Ação</td>
+  </tr>
+  <tr>
+    <td class="celula-titulo-id">1</td>
+    <td>Git</td>
+    <td class="celula-excluir"><a>E</a></td>
+  </tr>
+</table>
 <div style="margin-top:50px">
-  <button (click)="voltar()">Voltar</button>
+  <label>Nome: </label><input type="text" style="width: 200px;
+         background-color:black; border-color: darkgreen; color: darkgreen; border:solid 2px" />
+  <br><br>
+  <button class="botao-cadastro-titulos" (click)="voltar()">Voltar</button>
+  <button class="botao-cadastro-titulos" (click)="cadastrar()">Cadastrar</button>
 </div>

@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  background-color: black;
+  color: darkgreen;
+  
+}
+
+.container {
+  background-color: black;
+  color: darkgreen;
+}
+
+.botao-cadastro-titulos {
+  width: 100px;
+  margin: 0 10px;
+  background-color: black;
+  border-color: darkgreen;
+  color: darkgreen;
+  border: solid 2px;
+}
+
+.tabela-titulos-cadastrados {
+  width: 300px;
+  text-align: center;
+  border-color: darkgreen;
+  color: darkgreen;
+}
