@@ -14,4 +14,8 @@ export class MateriaService {
   public getMateria(): Observable<Array<Materia>>{
     return this.http.get<Array<Materia>>(this.url.materia);
   }
+
+  public cadastrarMateria(novaMateria: Materia) {
+    this.http.post(this.url.materia, novaMateria).subscribe();
+  }
 }

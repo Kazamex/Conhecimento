@@ -6,15 +6,18 @@
     <td>Nome</td>
     <td class="celula-excluir">Ação</td>
   </tr>
-  <tr>
-    <td class="celula-titulo-id">1</td>
-    <td>Git</td>
+  <tr *ngFor="let materia of materias">
+    <td class="celula-titulo-id">{{materia.id_materia}}</td>
+    <td>{{materia.nome_materia}}</td>
     <td class="celula-excluir"><a>E</a></td>
   </tr>
 </table>
 <div style="margin-top:50px">
-  <label>Nome: </label><input type="text" style="width: 200px;
-         background-color:black; border-color: darkgreen; color: darkgreen; border:solid 2px" />
+  <label>Nome:
+    </label>
+      <input type="text" style="width: 200px; background-color:black;
+        border-color: darkgreen; color: darkgreen; border:solid 2px"
+        [(ngModel)]="textoNovaMateria"/>
   <br><br>
   <button class="botao-cadastro-titulos" (click)="voltar()">Voltar</button>
   <button class="botao-cadastro-titulos" (click)="cadastrar()">Cadastrar</button>

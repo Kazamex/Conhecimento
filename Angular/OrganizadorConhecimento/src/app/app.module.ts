@@ -7,6 +7,7 @@ import { TitulosComponent } from './components/titulos/titulos.component';
 import { CadastroTitulosComponent } from './components/cadastro-titulos/cadastro-titulos.component';
 import { MateriaService } from './services/materia.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
