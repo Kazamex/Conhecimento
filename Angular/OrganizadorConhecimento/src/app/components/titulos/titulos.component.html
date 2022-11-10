@@ -1,7 +1,11 @@
-<h2>Selecione um titulo:</h2>
+<h2>Selecione uma materia:</h2>
 <div>
   <a href="https://www.google.com.br">Google</a>
+  <ul>
+    <li *ngFor="let materia of materias"><a (click)="teste(materia.nome_materia)">{{materia.nome_materia}}</a></li>
+  </ul>
+  
 </div>
 <div style="margin-top:50px">
-  <button (click)="teste()">Cadastrar</button>
+  <button (click)="cadastrarMateria()">Cadastrar</button>
 </div>

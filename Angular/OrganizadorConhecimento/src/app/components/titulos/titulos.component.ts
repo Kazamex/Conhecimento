@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Materia } from '../../modelos/modelo';
+import { MateriaService } from '../../services/materia.service';
 
 @Component({
   selector: 'app-titulos',
@@ -8,11 +10,24 @@ import { Router } from '@angular/router';
 })
 export class TitulosComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  public materias: Array<Materia> = [];
+
+  constructor(
+    private router: Router,
+    private materiaService: MateriaService
+  ) { }
 
   ngOnInit(): void {
+    this.materiaService.getMateria().subscribe((res: Array<Materia>) => {
+       this.materias = res;
+    });
   }
-  teste() {
+
+  teste(texto:string) {
+    console.log(texto);
+  }
+
+  public cadastrarMateria() {
     this.router.navigate(['cadastro-titulos']);
   }
 }
