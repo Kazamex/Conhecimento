@@ -1,19 +1,24 @@
 {
   "materias": [
     {
-      "id_materia": 1,
+      "id": 1,
       "nome_materia": "Git",
+      "ids_conteudo": []
+    },
+    {
+      "id": 2,
+      "nome_materia": "Angular",
       "ids_conteudo": []
     }
   ],
   "conteudos": {
-    "id_conteudo": "",
+    "id": "",
     "id_materia": 1,
     "nome_conteudo": "",
     "ids_informacao": []
   },
   "informacoes": {
-    "id_informacao": 1,
+    "id": 1,
     "id_conteudo": 1,
     "tipo_informacao": "",
     "texto_informacao": "",
