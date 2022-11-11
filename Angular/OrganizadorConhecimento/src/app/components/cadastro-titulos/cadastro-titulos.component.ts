@@ -29,9 +29,9 @@ export class CadastroTitulosComponent implements OnInit {
 
   cadastrar() {
     let novaMateria: Materia;
-    let idUltimaMateria = this.materias[this.materias.length - 1].id_materia;
+    let idUltimaMateria = this.materias[this.materias.length - 1].id;
     novaMateria = {
-      id_materia: idUltimaMateria + 1,
+      id: idUltimaMateria+1,
       nome_materia: this.textoNovaMateria,
       ids_conteudo: []
     }
